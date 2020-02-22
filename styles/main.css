@@ -1,60 +1,30 @@
-.arial-paragraph {
-   font-family: "Arial";
- }
-
-.arial-black-paragraph {
-  font-family: "Arial Black";
+body h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Lato';
 }
 
-.verdana-paragraph {
-  font-family: "Verdana";
+.gallery {
+  width: 90%;
+  margin:0 auto;
+  border: black 1px solid;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-.trebuchet-paragraph {
-  font-family: "Trebuchet MS";
+.gallery > a  {
+  width: 40%;
+  padding: 10px
 }
 
-.times-new-roman-paragraph {
-  font-family: "Times New Roman";
+.gallery > a > img  {
+  width: 100%;
 }
 
-.georgia-paragraph {
-  font-family: "Georgia";
+* {
+  box-sizing: border-box;
 }
-
-.courier-paragraph {
-  font-family: "Courier";
-}
-
-.courier-new-paragraph {
-  font-family: "Courier New";
-}
-
-.comic-sans-paragraph {
-  font-family: "Comic Sans MS";
-}
-
-.calibri-paragraph {
-  font-family: "Calibri";
-}
-
-.candara-paragraph {
-  font-family: "Candara";
-}
-
-.corbel-paragraph {
-  font-family: "Corbel";
-}
-
-.cambria-paragraph {
-  font-family: "Cambria";
-}
-
-.constantia-paragraph {
-  font-family: "Constantia";
-}
-
-.consolas-paragraph {
-  font-family: "Consolas";
-}
-
