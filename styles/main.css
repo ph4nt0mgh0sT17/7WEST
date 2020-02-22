@@ -1,28 +1,151 @@
-body h1 {
-  font-size: 3rem;
-  text-align: center;
+body {
   font-family: 'Lato';
+  margin: 0;
+  background-color: whitesmoke;
 }
 
-.gallery {
-  width: 90%;
-  margin:0 auto;
-  border: black 1px solid;
+h1 {
+  text-align: center;
+}
+
+.navbar {
+  position:absolute;
+  top:0;
+  left: 0;
+  right: 0;
   display: flex;
-  flex-direction: row;
-  flex-grow: 1;
+  background-color: #05386B;
+  flex-flow: row nowrap;
+  max-height: 80px;
+}
+
+.navbar h1.title {
+  display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 2rem;
+  padding-left: 1rem;
+  border-right: 1px black solid;
+  padding-right: 1rem;
+  line-height: 10px;
+  margin: 0;
+  color:whitesmoke;
+  padding: 20px
 }
 
-.gallery > a  {
-  width: 40%;
-  padding: 10px
+.navbar .menu {
+  display: flex !important;
+  flex-flow: row nowrap;
+  justify-content: left;
+  flex-grow: 1;
 }
 
-.gallery > a > img  {
+.navbar ul.navbar-menu {
+  list-style: none;
+  display: flex !important;
+  flex-flow: row nowrap;
+  justify-content: left;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: flex;
+}
+
+.navbar ul li a {
+  font-size: 1.25rem;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  text-decoration: none;
+  border-right: 1px black solid;
+}
+
+.navbar ul li:last-child a {
+  border-right: none;
+}
+
+
+.navbar ul li a.active {
+  background-color: #CEBC81;
+}
+
+.navbar ul li a:hover {
+  background-color: #FCE181;
+}
+
+.mikrite-title-group {
+  position: relative;
+  margin-top: 80px;
+  background: url("../images/title.jpg") center center no-repeat;
+  background-size: cover;
   width: 100%;
+  min-height: 1080px;
+}
+
+.mikrite-title-group::before {
+  opacity: 0.6;
+  display: block;
+  content: '';
+  position: absolute;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+}
+
+.mikrite-title-group .row {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  flex-flow: row nowrap;
+  top: 80px;
+  padding-top: 30vh;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+
+  color: whitesmoke;
+  z-index: 100;
+
+}
+
+.row .title {
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+  border-right: 5px whitesmoke solid;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.row .title h1 {
+  margin: 10px;
+  font-size: 4em;
+}
+.row .title h2 {
+  margin: 10px;
+  font-size: 2em;
+}
+
+.row .information {
+  padding-left: 30px;
+}
+
+footer {
+  display: flex;
+  background-color: #05386B;
+  flex-direction: row;
+  justify-content: center;
+  border-top: 2px whitesmoke solid;
+  z-index: 1209;
+}
+footer .footer-title {
+  color: whitesmoke;
+
 }
 
 * {
