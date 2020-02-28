@@ -322,3 +322,39 @@ footer .footer-title {
   background-color: #EEE2DC;
 }
 
+table {
+  margin: 20px;
+  border-collapse: collapse;
+  border-radius: 1em ;
+  overflow: hidden;
+  color: whitesmoke;
+}
+
+thead {
+  border-radius: 15px;
+  background-color: #6C7AE0;
+}
+
+th {
+
+  font-family: Lato;
+  font-size: 17px;
+  padding: 18px;
+
+}
+
+tbody tr:nth-child(odd) td {
+  padding: 10px;
+  background-color: #FC4445;
+  border-bottom: 1px whitesmoke solid;
+}
+
+tbody tr:nth-child(even) td {
+  padding: 10px;
+  background-color: #D79922;
+  border-bottom: 1px whitesmoke solid;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
