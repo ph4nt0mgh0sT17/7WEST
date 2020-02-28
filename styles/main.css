@@ -166,6 +166,7 @@ footer .footer-title {
   flex: 2 1 auto;
   background-color: #D79922;
   color: whitesmoke;
+  justify-content: center;
 }
 
 @media (max-width: 900px) {
@@ -257,3 +258,67 @@ footer .footer-title {
   height: 100%;
   border: whitesmoke 2px groove;
 }
+
+.contact-container {
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: #1A1A1D;
+  border: #4E4E50 1px solid;
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 7px;
+}
+
+.mail-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.email-row {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+
+.email-row label {
+  flex-direction: row;
+  flex-grow: 1;
+  margin-right: 10px;
+  font-family: Lato;
+  justify-content: flex-start;
+}
+
+.email-row input[type=text] {
+  padding:10px;
+  font-family: Lato;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.email-row input[type=text]:focus {
+  padding:10px;
+  border: #44aaee 2px solid;
+
+}
+
+.email-row input[type=submit] {
+  padding: 10px;
+  font-family: Lato;
+  background-color: #123C69;
+  border: none;
+
+}
+
+.email-row input[type=submit]:hover {
+  cursor: pointer;
+  background-color: #EEE2DC;
+}
+
